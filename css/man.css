@@ -42,6 +42,7 @@ input {
         top: 10%;
         right: 48%;
         transform: translateY(-50%);
+        z-index: 6;
     }
 }
 
@@ -61,6 +62,7 @@ input {
     width: 50%;
     display: grid;
     grid-template-columns: 1fr;
+    z-index: 5;
 }
 
 form {
@@ -171,4 +173,66 @@ form.si .title {
         border-color: hsl(190, 100%, 42%);
         color: hsl(190, 100%, 42%);
     }
+}
+
+.panels-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 7;
+}
+
+.left-panel {
+    padding: 3em 17% 2em 12%;
+    pointer-events: all;
+}
+
+.right-panel {
+    pointer-events: none;
+    padding: 3em 12% 2em 17%;
+}
+
+.panel .content {
+    color: var(--color-white);
+}
+
+.panel h3 {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 2em;
+    /*margin-bottom: 1em;*/
+}
+
+.panel p {
+    font-size: 0.95em;
+    padding: 0.7em 0;
+}
+
+.btn.transparent {
+    margin: 0;
+    background-color: none;
+    border: 2px solid var(--color-white);
+    width: 130px;
+    height: 40px;
+}
+
+.right-panel .content,
+.right-panel .image {
+    transform: translateX(800px);
+}
+
+.image {
+    width: 100%;
 }
