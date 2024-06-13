@@ -5,14 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Login & Registration | Andres Developer</title>
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/man.css">
     <!-- Custom js -->
     <script type="module" src="js/app.js"></script>
+
 </head>
 
 <body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="/" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
 
+                    <div class="input-field">
+                        <i class="ri-user-line"></i>
+                        <input type="text" placeholder="user name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="ri-lock-line"></i>
+                        <input type="password" placeholder="password">
+                    </div>
+
+                    <input type="submit" value="login" class="btn solid">
+                    <p class="social-text">Or sign in with social platfroms</p>
+
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="ri-google-line"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container"></div>
+    </div>
 </body>
 
 </html>
